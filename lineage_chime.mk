@@ -14,6 +14,13 @@ $(call inherit-product, device/xiaomi/chime/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+AXION_MAINTAINER := nothing404error
+AXION_PROCESSOR := Snapdragon_662
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES := 4,5,6,7
+AXION_CAMERA_REAR_INFO := 48,2
+AXION_CAMERA_FRONT_INFO := 8
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_chime
 PRODUCT_DEVICE := chime
@@ -36,7 +43,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 
 # Set to true for building a ROM without GAPPS
 # Set to false for building a ROM with GAPPS included
