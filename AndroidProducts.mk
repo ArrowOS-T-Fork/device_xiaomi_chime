@@ -5,7 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chime.mk
+    $(LOCAL_DIR)/infinity_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    $(foreach variant, user userdebug eng, lineage_chime-$(variant))
+    infinity_chime-user \
+    infinity_chime-userdebug \
+    infinity_chime-eng

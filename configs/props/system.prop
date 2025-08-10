@@ -1,3 +1,9 @@
+#AboutPhone
+ro.infinity.soc=Snapdragon 662
+ro.infinity.battery=6000mAh
+ro.infinity.display=1080x2400, 60Hz
+ro.infinity.camera=48 MP + 2 MP, 8 MP
+
 # Camera
 log.tag.CHIUSECASE=ERROR
 persist.vendor.camera.expose.aux=1
