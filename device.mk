@@ -363,6 +363,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Performance Mode
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+
 # Dex
 ifeq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
