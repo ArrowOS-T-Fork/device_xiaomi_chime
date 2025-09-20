@@ -7,7 +7,6 @@
         "9999999",
         "1804800",
         "1612800",
-        "1420800"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -16,10 +15,10 @@
       "Name": "CPULittleClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
+        "9999999",
+        "1305600"
         "1017600",
-        "864000",
         "614400",
-        "300000"
       ],
       "ResetOnInit": true
     },
@@ -30,8 +29,6 @@
         "9999999",
         "2016000",
         "1804800",
-        "1612800",
-        "1401600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -40,11 +37,10 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
+        "9999999",
+        "1401600",
         "1056000",
-        "1612800",
-        "902400",
         "652800",
-        "300000"
       ],
       "ResetOnInit": true
     },
@@ -52,11 +48,9 @@
       "Name": "GPUMaxFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
-        "999999999",
         "950000000",
         "900000000",
         "820000000",
-        "745000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -65,8 +59,8 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "600000000",
         "745000000",
+        "600000000",
         "465000000",
         "320000000"
       ],
@@ -309,13 +303,13 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "1056000"
+      "Value":"1401600"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "1017600"
+      "Value": "1305600"
     },
     {
       "PowerHint": "INTERACTION",
@@ -663,7 +657,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "600000000"
+      "Value": "745000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
